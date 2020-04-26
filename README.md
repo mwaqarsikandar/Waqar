@@ -15,7 +15,7 @@ This app is a project for the Udacity React Nanodegree Program. This is for to d
 
 
 
-#MADE BY
+# MADE BY
 
 ## MUHAMMMAD WAQAR SIKANDAR
 
