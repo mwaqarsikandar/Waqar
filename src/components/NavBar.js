@@ -6,7 +6,7 @@ import { Link, Redirect } from "react-router-dom";
 import { deleteAuthedUser } from "../actions/authedUser";
 import "../css/navbar.css";
 
-class Navbar extends Component {
+class Navvbar extends Component {
   logout = () => {
     this.props.dispatch(deleteAuthedUser());
   };
@@ -49,4 +49,4 @@ function mapStateToProps({ authedUser, users }) {
   };
 }
 
-export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps)(Navvbar);

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Container, Card, Form, Button, Col, ProgressBar, Badge } from 'react-bootstrap'
 
-import NavigationBar from './NavigationBar'
+import NavvBar from './NavvBar'
 import '../css/QuestionDetail.css'
 
 import { handleAnswer } from '../actions/shared';
@@ -37,7 +37,7 @@ class QuestionDetails extends Component {
         let answerMarkOptionTwo = this.props.q ? this.props.q.optionTwo.votes.includes(this.props.authedUser) : null
         return (
             <div>
-                <NavigationBar />
+                <NavvBar />
                 <Container>
                     {answerMarkOptionOne === true || answerMarkOptionTwo === true ? (
                         <Col xs={6} md={6}>
@@ -120,17 +120,17 @@ class QuestionDetails extends Component {
 }
 
 function mapStateToProps({ users, questions, authedUser }, { match }) {
-    if(questtions[match.params.id] === undefined) {
+    if(questions[match.params.id] === undefined) {
         const error = true;
         return {
             error
         }
     }
 
-    let q = questtions[match.params.id]
+    let q = questions[match.params.id]
     let author = q ? users[q.author] : ''
     return {
-        q: questtions[match.params.id],
+        q: questions[match.params.id],
         author,
         authedUser
     }

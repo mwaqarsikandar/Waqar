@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 
 import '../css/QuestionDetail.css'
 
-class Card extends Component {
+class LeaderCard extends Component {
     render() {
         const { toUser } = this.props
         return (
@@ -20,4 +20,4 @@ class Card extends Component {
     }
 }
 
-export default Card
+export default LeaderCard

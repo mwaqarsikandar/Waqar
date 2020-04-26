@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Login from "./Login";
+import Signin from "./Signin";
 import Home from "./Home";
 import Question from "./Question";
 import Leaderboard from "./Leaderboard";
@@ -24,9 +24,9 @@ class App extends Component {
           <PrivateRoute path="/" exact component={Home} />
           <PrivateRoute path="/add" component={Question} />
           <PrivateRoute path="/leaderboard" component={Leaderboard} />
-          <Route path="/Sigin" exact component={Signin} />
+          <Route path="/Signin" exact component={Signin} />
           <PrivateRoute path="/questions/:id" component={QuestionDetails} />
-          <Route path="/Signout" exact component={Signout} />
+          
         </Router>
       </div>
     );

@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Container, Col, Nav } from 'react-bootstrap'
 
 
-import NavigationBar from './NavigationBar';
+import NavvBar from './NavvBar';
 import Poll from './Poll';
 import '../css/custom.css'
 
@@ -26,7 +26,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <NavigationBar />
+                <NavvBar />
                 <Container>
                     <Col xs={6} md={6}>
                         <Nav justify variant="tabs" defaultActiveKey="link-1">

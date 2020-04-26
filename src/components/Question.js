@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Container, Col, Form } from 'react-bootstrap'
 
-import NavigationBar from './NavigationBar';
+import NavvBar from './NavvBar';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
@@ -31,7 +31,7 @@ class Question extends Component {
     render() {
         return (
             <div>
-                <NavigationBar />
+                <NavvBar />
                 <Container>
                 <Col xs={6}>
                     <Card>

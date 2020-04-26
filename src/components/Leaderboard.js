@@ -3,18 +3,18 @@ import { connect } from 'react-redux'
 import { Container, Col } from 'react-bootstrap'
 
 
-import NavBar from './NavBar';
-import Card from './Card';
+import NavvBar from './NavvBar';
+import LeaderCard from './LeaderCard';
 
 class Leaderboard extends Component {
     render() {
         return (
             <div>
-                <NavBar />
+                <NavvBar />
                 <Container>
                 <Col xs={6} md={6}>
                 {this.props.sortUsers.map((user) => (
-                <Card key={user.id} user={user}/>
+                <LeaderCard key={user.id} user={user}/>
                 ))}
                 </Col>
                 </Container>
